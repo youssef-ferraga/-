@@ -1,0 +1,172 @@
+/* Fond général très grand et immersif */
+body {
+    background-color: #0b0e26;
+    background-image: radial-gradient(circle at center, #1e2a5f 0%, #050712 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Cadre de la question plus imposant */
+#game-container {
+    background: rgba(11, 14, 38, 0.8);
+    border: 3px solid #ffcc00;
+    border-radius: 30px;
+    padding: 60px;
+    width: 700px;
+    text-align: center; /* Important pour centrer le texte et les éléments inline-block */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+}
+#question {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+/* Grille pour les 4 cercles */
+#answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+}
+
+/* Style des boutons en cercles parfaits */
+button {
+    background: #ffffff; /* Cercles blancs */
+    color: #0b0e26;
+    border: 3px solid #ffcc00;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    width: 150px;  /* Taille des cercles */
+    height: 150px;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Style pour la zone du score final */
+#score-container {
+    background: rgba(11, 14, 38, 0.9);
+    border: 3px solid #ffcc00;
+    border-radius: 20px;
+    padding: 40px;
+    width: 500px;
+    text-align: center;
+    color: white;
+}
+
+.score-text {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.score-value {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+/* Style pour le score sans cadre supplémentaire */
+.score-text {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.score-value {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+#home-screen {
+    text-align: center;      /* Centre le texte et les éléments en ligne */
+    display: flex;           /* Utilise Flexbox pour le centrage */
+    flex-direction: column;  /* Aligne les éléments verticalement */
+    align-items: center;     /* Centre horizontalement dans le Flexbox */
+    justify-content: center; /* Centre verticalement si nécessaire */
+    height: 100%;            /* Prend toute la hauteur du cadre */
+    color: black;
+    font-size: 1.2rem;
+}
+
+#home-screen button {
+    display: block;          /* Force le bouton à respecter les marges */
+    margin: 0 auto;          /* Centre le bouton automatiquement */
+    width: 250px;
+    height: 70px;
+    font-size: 2rem;
+    border-radius: 50px;
+    background: #ffcc00;
+    color: #0b0e26;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#home-screen button:hover {
+    transform: scale(1.1);   /* Petit effet visuel au survol */
+}
+#home-screen {
+    background-image: url('fond_accueil.png');
+    background-size: contain;      /* Changez 'cover' par 'contain' */
+    background-position: center;   /* Garde l'image centrée */
+    background-repeat: no-repeat;  /* Très important : empêche l'image de se répéter */
+    border-radius: 60px;
+    padding: 150px;
+    text-align: center;
+}
+/* Style spécifique pour le bouton de recommencement */
+.restart-btn {
+    width: 120px;
+    height: 120px;
+    font-size: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid #ffcc00;
+    background-color: #ffffff;
+    color: #0b0e26;
+    
+    /* Centrage spécifique au bouton sans impacter la grille */
+    display: inline-block; 
+    margin: 50px auto;
+}
+/* ... (gardez tout votre CSS précédent) ... */
+
+/* Style pour la grille des 9 choix */
+#circles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+#selection-screen h2 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+/* On réutilise le style 'button' pour les cercles de sélection */
+#circles-grid button {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+}
